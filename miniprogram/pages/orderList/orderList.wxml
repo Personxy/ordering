@@ -1,0 +1,23 @@
+<mp-vtabs
+  vtabs="{{vtabs}}"
+  activeTab="{{activeTab}}"
+  bindtabclick="onTabCLick"
+  bindchange="onChange"
+  class="test"
+>
+  <block wx:for="{{vtabs}}" wx:key="title">
+    <mp-vtabs-content tabIndex="{{index}}">
+      <view class="vtabs-content-item">
+      <!-- <view class="item-category">{{item.title}}</view> -->
+        <view wx:for="{{item.list}}" wx:key="id" class="item" bindtap="handleTap" data-id="{{item.id}}" data-name="{{item.name}}">
+          <image src="cloud://yangyang-5gudqnjg7aed9528.7961-yangyang-5gudqnjg7aed9528-1317669953/微信图片_20230407161048.jpg" mode="widthFix" class="item-image"></image>
+          <view class="item-info">
+             <view class="title"> {{item.name}}</view>
+             <mp-icon icon="add2" color="red"  class="add-icon"></mp-icon>
+          </view>
+        </view>
+      </view>
+    </mp-vtabs-content>
+  </block>
+</mp-vtabs>
+

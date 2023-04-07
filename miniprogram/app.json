@@ -1,0 +1,25 @@
+{
+  "pages": ["pages/orderList/orderList", "pages/todayEat/todayEat", "pages/personal/personal"],
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/orderList/orderList",
+
+        "iconPath": "images/tabbar_order.png",
+        "selectedIconPath": "images/tabbar_order_selected.png"
+      },
+      {
+        "pagePath": "pages/todayEat/todayEat",
+
+        "iconPath": "images/tabbar_today_eat.png",
+        "selectedIconPath": "images/tabbar_today_eat_selected.png"
+      },
+      {
+        "pagePath": "pages/personal/personal",
+
+        "iconPath": "images/tabbar_personal.png",
+        "selectedIconPath": "images/tabbar_personal_selected.png"
+      }
+    ]
+  }
+}
